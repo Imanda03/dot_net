@@ -1,0 +1,11 @@
+C:\Users\asis0\source\repos\Lab3_abstract\bin\Debug\Lab3_abstract.exe.config
+C:\Users\asis0\source\repos\Lab3_abstract\bin\Debug\Lab3_abstract.exe
+C:\Users\asis0\source\repos\Lab3_abstract\bin\Debug\Lab3_abstract.pdb
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.csproj.AssemblyReference.cache
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.csproj.SuggestedBindingRedirects.cache
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.Form1.resources
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.Properties.Resources.resources
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.csproj.GenerateResource.cache
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.csproj.CoreCompileInputs.cache
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.exe
+C:\Users\asis0\source\repos\Lab3_abstract\obj\Debug\Lab3_abstract.pdb

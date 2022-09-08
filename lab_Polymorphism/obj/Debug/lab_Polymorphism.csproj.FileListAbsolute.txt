@@ -1,0 +1,11 @@
+C:\Users\asis0\source\repos\lab_Polymorphism\bin\Debug\lab_Polymorphism.exe.config
+C:\Users\asis0\source\repos\lab_Polymorphism\bin\Debug\lab_Polymorphism.exe
+C:\Users\asis0\source\repos\lab_Polymorphism\bin\Debug\lab_Polymorphism.pdb
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.csproj.AssemblyReference.cache
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.csproj.SuggestedBindingRedirects.cache
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.Form1.resources
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.Properties.Resources.resources
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.csproj.GenerateResource.cache
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.csproj.CoreCompileInputs.cache
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.exe
+C:\Users\asis0\source\repos\lab_Polymorphism\obj\Debug\lab_Polymorphism.pdb
