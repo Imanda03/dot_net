@@ -1,0 +1,2 @@
+C:\Users\asis0\source\repos\dot_net\ECommerce.DAL\obj\Debug\ECommerce.DAL.csproj.AssemblyReference.cache
+C:\Users\asis0\source\repos\dot_net\ECommerce.DAL\obj\Debug\ECommerce.DAL.csproj.CoreCompileInputs.cache

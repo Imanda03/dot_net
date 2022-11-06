@@ -1,0 +1,11 @@
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\bin\Debug\WorldCup.exe.config
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\bin\Debug\WorldCup.exe
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\bin\Debug\WorldCup.pdb
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.csproj.AssemblyReference.cache
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.csproj.SuggestedBindingRedirects.cache
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.Form1.resources
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.Properties.Resources.resources
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.csproj.GenerateResource.cache
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.csproj.CoreCompileInputs.cache
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.exe
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.pdb
