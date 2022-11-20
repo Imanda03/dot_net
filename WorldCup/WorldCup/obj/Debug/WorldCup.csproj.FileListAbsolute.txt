@@ -9,3 +9,4 @@ C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.csproj.
 C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.csproj.CoreCompileInputs.cache
 C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.exe
 C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.pdb
+C:\Users\asis0\source\repos\dot_net\WorldCup\WorldCup\obj\Debug\WorldCup.Form2.resources

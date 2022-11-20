@@ -42,11 +42,11 @@ namespace WorldCup
             }
             comboBox2.DataSource = jersyNo;
         }
-
+            
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Sorce=.\\sqlexpress;Initial Catalog=WorldCup; Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("insert into Player values('Anish', 'GoalKeeper', 4, 1)",conn);
+            SqlConnection conn = new SqlConnection("Data Source=.\\sqlexpress01; Initial Catalog=WorldCup; Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("insert into Player values('"+textBox1.Text+"', '"+comboBox1.Text+"', "+Convert.ToInt32(comboBox2.Text)+", 1)",conn);
         try{
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
@@ -60,6 +60,16 @@ namespace WorldCup
             {
                 cmd.Connection.Close();
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
         }
     }
 }
