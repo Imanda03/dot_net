@@ -1,7 +1,8 @@
-﻿namespace MVC_WebApplication
+﻿namespace MVC_WebApplication.Models
 {
-    public class Players
+    public class Player
     {
+     
         public int Id { get; set; }
         public string Name { get; set; }
 
@@ -10,5 +11,6 @@
         public int JNo { get; set; }
 
         public int CId { get; set; }
-    }
+    
+}
 }
