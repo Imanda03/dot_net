@@ -14,6 +14,6 @@ namespace MVC_WebApplication.Data
         {
         }
 
-        public DbSet<MVC_WebApplication.Player> Player { get; set; } = default!;
+        public DbSet<MVC_WebApplication.Models.Player> Player { get; set; } = default!;
     }
 }
