@@ -1,4 +1,6 @@
-﻿namespace WebApplication1.Models
+﻿using System.ComponentModel;
+
+namespace WebApplication1.Models
 {
     public class Product
     {
@@ -9,8 +11,9 @@
 
         public string Description { get; set; }
 
+        [DisplayName("Category Name")]
         public int CategoryId { get; set; }
 
-        public virtual Category Category { get; set; }
+        public virtual Category? Category { get; set; }
     }
 }
