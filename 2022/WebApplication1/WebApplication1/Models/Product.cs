@@ -8,7 +8,7 @@ namespace WebApplication1.Models
         public int Id { get; set; }
         [Required(ErrorMessage ="Title is required")]
         [StringLength(maximumLength:20, ErrorMessage ="Character are crossing their limits")]
-        [RegularExpression("^[a-zA-Z]")]
+        [RegularExpression(@"^[a-zA-Z] + $")]
         public string Title { get; set; }
 
         [DataType(DataType.Currency)]
