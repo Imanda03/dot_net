@@ -22,6 +22,7 @@ namespace WebApplication1.Controllers
         // GET: Product
         public async Task<IActionResult> Index()
         {
+            ViewData["CategoryId"] = new SelectList(_context.Category, "Id", "Name");
             var webApplication1Context = _context.Product.Include(p => p.Category);
             return View(await webApplication1Context.ToListAsync());
         }

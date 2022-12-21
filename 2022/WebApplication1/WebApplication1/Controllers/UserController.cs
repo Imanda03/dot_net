@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +14,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class UserController : Controller
     {
         private readonly WebApplication1Context _context;
@@ -43,27 +48,81 @@ namespace WebApplication1.Controllers
             return View(user);
         }
 
+
         // GET: User/Create
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
         }
 
+        [AllowAnonymous]
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login([Bind("Email,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                var checkUser = _context.User.ToList().Find(u => u.Email == user.Email && u.Password == user.Password);
+                if (checkUser != null)
+                {
+                    ViewData["ErrorMessage"] = "You have benn login";
+                    //Session maintain
+                    var claims = new List<Claim>();
+                    var claim = new Claim(ClaimTypes.Email, user.Email);
+                    var role = new Claim(ClaimTypes.Role, "Admin");
+                    claims.Add(claim);
+                    claims.Add(role);
+                    var identity = new ClaimsIdentity(claims,CookieAuthenticationDefaults.AuthenticationScheme);
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                    return RedirectToAction("Index","Home");
+                }
+                else
+                {
+
+
+                    ViewData["ErrorMessage"] = "User not found";
+                }
+                //return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
         }
+
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([Bind("Email,Password")] User user)
         {
             if (ModelState.IsValid)
             {
+                var checkUser = (from u in await _context.User.ToListAsync()
+                                where u.Email == user.Email
+                                select u).ToList();
+                if(checkUser.Count > 0)
+                {
+                    ViewData["ErrorMessage"] = "User already exist";
+                }
+                else
+                {
+
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewData["ErrorMessage"] = "User successfully register";
+                }
+                //return RedirectToAction(nameof(Index));
             }
             return View(user);
+
         }
 
         // POST: User/Create
